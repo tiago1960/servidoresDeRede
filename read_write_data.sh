@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #Objetivos:
 #1 - Hora com minutos da coleta de dados
 #2 - Nome da máquina
@@ -37,7 +39,8 @@ $(echo $LIST_NET>> 'logs_file.txt')
 
 
 #LOG HTML
-$(echo '<div>' >> 'logs_html.txt')
+$(echo '<div class="card m-2">' >> 'logs_html.txt')
+$(echo '<div class="card-body">' >> 'logs_html.txt')
 $(echo "        <p>Hora com minutos da coleta de dados(ISO8601): $DATE_NOW</p>" >> 'logs_html.txt')
 $(echo "        <p>Nome da máquina: $(hostname)</p>" >> 'logs_html.txt')
 $(echo "        <p>Total de memória RAM usada: $MEM_USED</p>" >> 'logs_html.txt')
@@ -45,5 +48,6 @@ $(echo "        <p>Total de memória RAM disponível: $MEM_FREE</p>" >> 'logs_ht
 $(echo "        <p>O nome do processo que utiliza mais memória e o total de memória RAM utilizada: $MAX_PROC</p>" >> 'logs_html.txt')
 $(echo "        <p>A listagem das partições contendo ponto de ponto de montagem, tamanho e percentagem de utilização: $LIST_PART</p>" >> 'logs_html.txt')
 $(echo "        <p>O total de bytes e pacotes enviados e recebidos em cada interface de rede: $LIST_NET</p>" >> 'logs_html.txt')
+$(echo '    </div>' >> 'logs_html.txt')
 $(echo '    </div>' >> 'logs_html.txt')
 $(echo '<hr>' >> 'logs_html.txt')
