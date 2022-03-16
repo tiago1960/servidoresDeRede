@@ -20,14 +20,19 @@ fi
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiagod</title>
+    <title>Coleta de Dados</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
         .card {
-            background-color: black;
-            color: aqua;
+            background-color: rgb(140, 146, 228);
+            color: rgb(0, 0, 0);
         }
-
+        .card-header{
+            background-color: rgb(105, 114, 230);
+        }
+        .list-group-item{
+            background-color: rgb(204, 200, 200);
+        }
     </style>
 </head>
 <body>
